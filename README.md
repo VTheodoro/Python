@@ -1,5 +1,5 @@
 # Python - 2025
-Este repositório contém os arquivos dos MEUS projetos e atividades realizadas durante a disciplina de Programação Web III na área de Phyton. As aulas foram propostas e ministradas pelo professor **[Diego Max](https://github.com/maxxdiego)** da Etec de Registro.
+Este repositório contém os arquivos dos MEUS projetos e atividades realizadas durante a disciplina de Programação Web III na área de Python. As aulas foram propostas e ministradas pelo professor **[Diego Max](https://github.com/maxxdiego)** da Etec de Registro.
 
 <div align="left">  
 <h2>Tecnologias Utilizadas:</h2>
