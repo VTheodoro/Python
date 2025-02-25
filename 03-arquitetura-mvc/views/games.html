@@ -35,6 +35,14 @@
         {% endfor %}
         <!-- {# "jogadores" é o nome do array, "jogador" é uma variável criada na hora #} -->
     </ol>
+
+<h4>Entrar no Jogo</h4>
+<from action="{{url_for('games')}}" method="POST">
+    <label for="nome">Nome do Jogador:</label>
+    <input type="text" name="jogador"><br>
+    <input type="submit" value="Entrar">
+</from>
+
     <hr>
     <p>Outros games sendo jogados no momento:</p>
     <ul>
