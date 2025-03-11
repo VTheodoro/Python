@@ -20,11 +20,7 @@ def init_app(app):
             'ano': 2012,
             'categoria': 'FPS Online'
         }
-        titulo = 'CS-GO'
-        ano = 2012
-        categoria = 'FPS Online'
-        jogadores = ['Miguel José', 'Miguel Isack', 'Leaf',
-                     'Quemario', 'Trop', 'Aspax', 'maxxdiego']
+
 
         if request.method == 'POST':
             if request.form.get('jogador'):
