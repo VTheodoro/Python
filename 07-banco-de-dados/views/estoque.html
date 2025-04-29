@@ -25,21 +25,27 @@
         </tr>
         {% endfor %}
     </tbody>
+</table>
+
+<table class="table tablebordered table-hover">
     <thead class="table-dark">
-    <tr>
-        <th>Nome:</th>
-        <th>Fabricante:</th>
-        <th>Preço:</th>
-        <th>Quantidade:</th>
-    </tr>    
+        <tr>
+            <th>Nome</th>
+            <th>Fabricante</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+        </tr>
     </thead>
     <tbody>
+        {% for game in consoleestoque %} 
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
+            <td>{{game.nome}}</td>
+            <td>{{game.fabricante}}</td>
+            <td>{{game.preco}}</td>
+            <td>{{game.quantidade}}</td>
         </tr>
+        {% endfor %}
     </tbody>
 </table>
+
 {% endblock content %}

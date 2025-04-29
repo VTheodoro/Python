@@ -1,5 +1,5 @@
 from flask import render_template, request, redirect, url_for
-from models.database import Game
+from models.database import Game, Console
 # Lista de jogadores
 jogadores = ['Miguel José', 'Miguel Isack', 'Leaf',
              'Quemario', 'Trop', 'Aspax', 'maxxdiego']
@@ -51,5 +51,8 @@ def init_app(app):
         
         #criando um select no banco, todos os jogos da tabela: Game.delete, Game.add, Game.querry.all. GRAVADO NA VARIAVEL GAMESESTOQUE
         gamesestoque = Game.query.all()
+        consoleestoque = Console.query.all()
         return render_template('estoque.html',
-                               gamesestoque=gamesestoque)
+                               gamesestoque=gamesestoque,
+                               consoleestoque=consoleestoque)
+        
